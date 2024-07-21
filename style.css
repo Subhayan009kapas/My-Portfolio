@@ -366,6 +366,8 @@ li a {
   padding: 30px;
   background:linear-gradient(to right, rgb(121, 0, 255), rgb(255, 88, 202)) ;
   cursor: pointer;
+  position: relative;
+  
  
   
 }
