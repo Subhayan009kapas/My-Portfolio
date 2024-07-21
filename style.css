@@ -1,0 +1,672 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    
+}
+html ,body{
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: table-cell;
+  padding: 30px;
+}
+li a {
+  text-decoration: none;
+  font-size: 25px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 600px;
+  position: relative;
+  bottom: 100px;
+ 
+}
+
+.logo p {
+  font-size: 37px;
+  font-family: cursive;
+  font-weight: bold;
+}
+.logo {
+  position: relative;
+  left: 150px;
+}
+.logo img{
+  height: 400px;
+}
+.about {
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  position: relative;
+  bottom: 250px;
+}
+.about .text {
+  position: relative;
+  left: 60px;
+}
+.about h1 {
+  font-size: 60px;
+}
+.about p {
+  font-weight: 400;
+  font-size: 35px;
+  color: rgb(102, 98, 98);
+  line-height: 50px;
+}
+.about .pic img {
+  height: 800px;
+}
+.profile-icon {
+  font-size: 53px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  position: relative;
+  left: 10px;
+}
+.profile-icon a {
+  cursor: pointer;
+}
+.profile-icon img {
+  height: 55px;
+}
+
+.resume-btn button {
+  height: 69px;
+  width: 240px;
+  background: linear-gradient(to right, rgb(121, 0, 255), rgb(255, 88, 202));
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 40px;
+  position: relative;
+  right: 30px;
+}
+.resume-btn button:hover {
+  background: linear-gradient(to right, rgb(255, 88, 202), rgb(121, 0, 255));
+  box-shadow: 0 0 10px rgba(121, 0, 255, 0.5), 
+  0 0 20px rgba(121, 0, 255, 0.3), 
+  10px 10px 30px rgba(255, 88, 202, 0.4),
+  20px 20px 40px rgba(255, 88, 202, 0.3);
+}
+.about .pic {
+  position: relative;
+  bottom: 30px;
+}
+.what-i-do {
+  display: flex;
+  align-items: center;
+  gap: 300px;
+  padding: 20px;
+  position: relative;
+  bottom: 250px;
+}
+.what-detail {
+  position: relative;
+  right: 60px;
+}
+.what-detail h1 {
+  font-size: 60px;
+}
+.what-pic img {
+  height: 660px;
+  position: relative;
+  left: 120px;
+}
+.tagline {
+  font-size: 28px;
+  line-height: 35px;
+}
+
+.lang-icon img {
+  padding: 20px;
+  height: 70px;
+}
+.txt {
+  display: flex;
+  align-items: center;
+}
+.txt p {
+  font-size: 23px;
+}
+.proficiency {
+  display: flex;
+  align-items: center;
+  gap: 300px;
+  padding: 20px;
+  position: relative;
+  margin-top: 100px;
+  position: relative;
+  bottom: 250px;
+}
+.scale {
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+  left: 70px;
+}
+.scale p {
+  font-size: 60px;
+}
+.scale .skill-bar {
+  height: 20px;
+  width: 100%;
+  overflow: hidden;
+  background-color: lightgrey;
+  border-radius: 5px;
+}
+.scale .skill-level {
+  height: 20px;
+  border-radius: 5px;
+}
+.scale .skill-level.frontend {
+  width: 85%;
+  background: linear-gradient(to right, rgb(121, 0, 255), rgb(255, 88, 202));
+}
+.scale .skill-level.Backend {
+  width: 30%;
+  background: linear-gradient(to right, rgb(121, 0, 255), rgb(255, 88, 202));
+}
+.scale .skill-level.Programming {
+  width: 70%;
+  background: linear-gradient(to right, rgb(121, 0, 255), rgb(255, 88, 202));
+}
+.prof-img img {
+  height: 660px;
+}
+.skill .skill-name {
+  font-size: 25px;
+  position: relative;
+  left: 5px;
+}
+
+/* .project{
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  
+} */
+.project .pro-col-1{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.project .pro-col-2 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.pro-img1{
+  height: 160px;
+  width: 300px;
+  background-color:#fff;
+  background-image: url("./educare.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px  rgb(82, 4, 155) ;
+  cursor: pointer;
+  transition: transform 1s ease;
+  animation: imageAnimation 3s ease 1s  infinite;
+}
+@keyframes imageAnimation{
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pro-img1:hover{
+  transform: scale(1.1);
+ 
+}
+.pro-img2{
+  height: 160px;
+  width: 300px;
+  background-color: #fff;
+  background-image: url("./helpinghand.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px  rgb(82, 4, 155) ;
+  cursor: pointer;
+  animation: imageAnimation 3s ease 1s  infinite;
+  
+}
+.pro-img3{
+  height: 160px;
+  width: 300px;
+  background-color: #fff;
+  background-image: url("scorevault.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px  rgb(82, 4, 155) ;
+  cursor: pointer;
+  animation: imageAnimation 3s ease 1s  infinite;
+  
+  
+}
+.pro-img4{
+  height: 160px;
+  width: 300px;
+  background-color: #fff;
+  background-image: url("./hospital-management.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px  rgb(82, 4, 155) ;
+  cursor: pointer;
+  animation: imageAnimation 3s ease 1s  infinite;
+}
+.pro-img5{
+  height: 160px;
+  width: 300px;
+  background-color: #fff;
+  background-image: url("./foodWeb.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px  rgb(82, 4, 155) ;
+  cursor: pointer;
+  animation: imageAnimation 3s ease 1s  infinite;
+}
+.pro-img6{
+  height: 160px;
+  width: 300px;
+  background-color: #fff;
+  background-image: url("./currency.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px  rgb(82, 4, 155) ;
+  cursor: pointer;
+  animation: imageAnimation 3s ease 1s  infinite;
+}
+
+.project .pro-col-1 .pro{
+
+  height: 400px;
+  width: 300px;
+  background-color:#fff;
+  margin: 30px;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(121, 0, 255, 0.5), 
+  0 0 20px rgba(121, 0, 255, 0.3), 
+  10px 10px 30px rgba(255, 88, 202, 0.4),
+  20px 20px 40px rgba(255, 88, 202, 0.3);
+  
+
+}
+.project .pro-col-2 .pro{
+  height: 400px;
+  width: 300px;
+  margin: 30px;
+  background-color:#fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(121, 0, 255, 0.5), 
+  0 0 20px rgba(121, 0, 255, 0.3), 
+  10px 10px 30px rgba(255, 88, 202, 0.4),
+  20px 20px 40px rgba(255, 88, 202, 0.3);
+
+}
+.pro-con{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(242, 239, 245);
+  
+}
+.pro-con-con .heading{
+
+  font-size: 60px;
+  padding: 20px;
+  margin-left: 90px;
+
+}
+.title{
+  font-size: 25px;
+}
+.sub-title{
+  font-size: 18px;
+  line-height: 28px;
+
+}
+.view-on-git-btn {
+  height: 38px;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 30px;
+  background:linear-gradient(to right, rgb(121, 0, 255), rgb(255, 88, 202)) ;
+  cursor: pointer;
+ 
+  
+}
+.view-on-git-btn:hover{
+  background: linear-gradient(to right, rgb(255, 88, 202), rgb(121, 0, 255));
+  box-shadow: 0 0 10px rgba(121, 0, 255, 0.5), 
+  0 0 20px rgba(121, 0, 255, 0.3), 
+  10px 10px 30px rgba(255, 88, 202, 0.4),
+  20px 20px 40px rgba(255, 88, 202, 0.3);
+
+}
+.view-on-git-btn p{
+  color: #fff;
+}
+.view-on-git-btn img{
+  height: 40px;
+}
+.pro-btn{
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  
+}
+.code img{
+  height: 22px;
+}
+.one{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.achivement{
+  position: relative;
+  top: 200px;
+}
+
+.achivement .main .heading{
+  font-size: 60px;
+  position: relative;
+  left: 120px;
+}
+.achivement .main .heading img{
+  height: 100px;
+  position: relative;
+  top: 20px;
+}
+.achivement-container-con{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50px;
+  background-color: rgb(242, 239, 245);
+  padding: 30px;
+}
+.achivement-container{
+  display: flex;
+  align-items: center;
+  gap: 100px;
+ 
+}
+.achivement-container .achive{
+  height: 550px;
+  width: 400px;
+  background-color: #fff;
+  padding: 35px;
+  box-shadow: 0 0 10px rgba(121, 0, 255, 0.5), 
+  0 0 20px rgba(121, 0, 255, 0.3), 
+  10px 10px 30px rgba(255, 88, 202, 0.4),
+  20px 20px 40px rgba(255, 88, 202, 0.3);
+  border-radius: 10px;
+
+}
+.achive .img1{
+  height: 260px;
+  width: 400px;
+  background-color: #fff;
+  position: relative;
+  background-image: url("./gdsc_certificate.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: transform  1s ease;
+  
+}
+.achive .img1:hover{
+  transform: scale(1.1);
+}
+.achive .img2{
+  height: 260px;
+  width: 400px;
+  background-color: #fff;
+  position: relative;
+  background-image: url("./data_science_certificate.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: transform  1s ease;
+
+ 
+}
+.achive .img2:hover{
+  transform: scale(1.1);
+}
+.achive .img3{
+  height: 260px;
+  width: 400px;
+  background-color: #fff;
+  position: relative;
+  background-image: url("./duhack_certificate.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: transform  1s ease;
+ 
+ 
+}
+.achive .img3:hover{
+  transform: scale(1.1);
+}
+.achive .para p{
+  font-size: 20px;
+  line-height: 35px;
+}
+.achive .title{
+  font-weight: bold;
+}
+
+
+.contact{
+  
+  position: relative;
+  top: 400px;
+
+ 
+}
+.contact .main .head p{
+  font-size: 60px;
+  position: relative;
+  left: 100px;
+}
+
+.contact-with .mail{
+display: flex;
+align-items: center;
+gap: 20px;
+}
+.contact-with .mail img{
+  height: 40px;
+}
+.contact-with .mail p{
+  font-size: 28px;
+  
+}
+.contact-with .ph img{
+  height: 40px;
+}
+.contact-with .ph p{
+  font-size: 28px;
+  
+}
+.contact-with .ph{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+}
+.contact-with .address{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contact-with .address p{
+  font-size: 28px;
+}
+.contact-with .address img{
+  height: 60px;
+}
+.contact-icon {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  top: 30px;
+  left: 15px;
+}
+.contact-icon img{
+  height: 50px;
+}
+
+.contact-container{
+  width: 100%;
+  position: relative;
+  top: 30px;
+  display: flex;
+  gap: 400px;
+  align-items: center;
+  padding: 50px;
+  flex-wrap: wrap;
+  background-color:rgb(242, 239, 245) ;
+
+}
+.contact-container .contact-with{
+  position: relative;
+  left: 60px;
+ 
+}
+.cv-btn{
+  position: relative;
+  left: 50px;
+  top: 50px;
+}
+.cv-btn button{
+  height: 50px;
+  width: 180px;
+  background: linear-gradient(to right, rgb(121, 0, 255), rgb(255, 88, 202));
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 40px;
+  position: relative;
+  right: 30px;
+}
+.send-msg form input{
+  height: 40px;
+  width: 600px;
+  padding: 10px;
+  font-size: 20px;
+  box-shadow:0 0 10px rgba(121, 0, 255, 0.5), 
+  0 0 20px rgba(121, 0, 255, 0.3), 
+  10px 10px 30px rgba(255, 88, 202, 0.4),
+  20px 20px 40px rgba(255, 88, 202, 0.3);
+  border-radius: 10px; ;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+}
+.send-msg form textarea{
+  height: 40px;
+  width: 600px;
+  padding: 10px;
+  font-size: 18px;
+  box-shadow:0 0 10px rgba(121, 0, 255, 0.5), 
+  0 0 20px rgba(121, 0, 255, 0.3), 
+  10px 10px 30px rgba(255, 88, 202, 0.4),
+  20px 20px 40px rgba(255, 88, 202, 0.3);
+  border-radius: 10px; ;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+}
+.send-msg form .msg-box{
+  height: 100px;
+  width: 600px;
+  padding: 10px;
+}
+.send-msg button{
+  height: 50px;
+  width: 180px;
+  background: linear-gradient(to right, rgb(121, 0, 255), rgb(255, 88, 202));
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 40px;
+  position: relative;
+  right: 30px;
+  padding: 3px;
+}
+.send-msg button img{
+  height: 25px;
+  position: relative;
+  top: 5px;
+}
+.send-msg{
+  position: relative;
+  top: 20px;
+}
+
+
+.copyright{
+  position: relative;
+  top: 400px;
+  font-size: 20px;
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color:#fff;
+ 
+  width: 100%;
+  bottom: 0;
+}
+.footer p {
+  margin: 0;
+  font-size: 24px;
+}
