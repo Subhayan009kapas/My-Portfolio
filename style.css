@@ -314,6 +314,7 @@ li a {
   0 0 20px rgba(121, 0, 255, 0.3), 
   10px 10px 30px rgba(255, 88, 202, 0.4),
   20px 20px 40px rgba(255, 88, 202, 0.3);
+  overflow:hidden;
   
 
 }
@@ -328,6 +329,7 @@ li a {
   0 0 20px rgba(121, 0, 255, 0.3), 
   10px 10px 30px rgba(255, 88, 202, 0.4),
   20px 20px 40px rgba(255, 88, 202, 0.3);
+   overflow:hidden;
 
 }
 .pro-con{
